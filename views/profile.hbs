@@ -1,0 +1,50 @@
+<main class="max-w-7xl mx-auto bg-gray-100 p-4 rounded-md shadow-lg shadow-gray-500 space-y-5">
+    {{#if isError}}
+        <div class="flex flex-col justify-center items-center gap-2">
+            <span class="text-4xl">❌</span>
+            <h1 class="text-xl font-semibold text-red-500 text-center">Error</h1>
+
+            <div class="bg-red-50 border-red-500 p-6 mb-6">
+                <p class="text-red-800 font-medium">
+                    {{message}}
+                </p>
+            </div>
+
+            <a href="/register" class="text-lg font-medium bg-red-300 p-2 hover:bg-red-500 cursor-pointer rounded-md">
+                Register Again
+            </a>
+        </div>
+    {{else}}
+        <h2
+            class="font-bold text-2xl text-blue-500 text-center"
+        >
+            <div class="py-2 px-4 rounded-md bg-blue-200">
+                Welcome, {{form.name}} 
+            </div>
+        </h2>
+
+        <div class="flex flex-col justify-center items-center gap-2">
+            <h3 class="text-xl font-semibold text-center">
+                Your Registration Details: 
+            </h3>
+
+            <img src="/uploads/{{form.image}}" alt="image of the student"
+                width="500"
+                height="500"
+                class="rounded-lg"
+            >
+
+            <p class="text-lg font-medium">
+                Email: {{form.email}}
+            </p>
+
+            <p class="text-lg font-medium">
+                Course: {{form.courses}}
+            </p>
+
+            <a href="/register" class="text-lg font-medium bg-green-300 p-2 hover:bg-green-500 cursor-pointer rounded-md">
+                Register Again
+            </a>
+        </div>
+    {{/if}}
+</main>
