@@ -60,7 +60,3 @@ Routes
 - `app.js` — server entry and routes
 - `views/` — Handlebars templates used by the app
 - `public/uploads` — runtime folder for uploaded images
-
----
-
-If you'd like, I can: run the tests, add a `.gitignore` entry for `public/uploads`, or update the README with screenshots and example form fields. Which would you prefer next?
