@@ -50,14 +50,6 @@ Routes
 - Allowed image types are typically `.jpg`, `.jpeg`, `.png` (check `app.js` for specific validation).
 - The app may disable the `X-Powered-By` header for security (see `app.disable('x-powered-by')`).
 
-## Testing
-
-If the repository includes tests, run them with:
-
-```bash
-npm test
-```
-
 ## Troubleshooting
 
 - If the server does not start, check `package.json` scripts and node version.
